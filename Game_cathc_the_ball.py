@@ -103,8 +103,6 @@ def write_score():
     exit()
 
 
-
-
 user_line = Label(canv, text="User name: " + user_name, font="Arial 14")
 user_line.place(x=0, y=0)
 
