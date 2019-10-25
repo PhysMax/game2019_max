@@ -98,8 +98,11 @@ user_name = input("User name: ")
 def write_score():
     global user_name, score
     file = open('players.txt', 'a')
-    file.write(user_name + ": " + str(score) + "\n")
+    file.write("[" + user_name + "," + str(score) + "]" + "\n")
+    file.close()
     exit()
+
+
 
 
 user_line = Label(canv, text="User name: " + user_name, font="Arial 14")
